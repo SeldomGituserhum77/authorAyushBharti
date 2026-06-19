@@ -1,0 +1,3047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ayush Bharti | Official Portfolio</title>
+
+<meta name="description"
+content="Official Portfolio of Ayush Bharti - Author, Poet, Artist, Music Enthusiast, Programmer and Internationally Recognized Literary Contributor.">
+
+<meta name="keywords"
+content="Ayush Bharti, Author, Poet, Writer, International Author, The Unseen Truth, Where The Heart Paused">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+<style>
+    /* ===================================================
+   AYUSH BHARTI OFFICIAL PORTFOLIO
+   PREMIUM PROFESSIONAL THEME
+=================================================== */
+
+:root{
+
+--primary:#d4af37;
+--secondary:#f5d76e;
+
+--dark:#050505;
+--dark2:#0d0d0d;
+--dark3:#121212;
+
+--text:#ffffff;
+--text-soft:#cfcfcf;
+
+--glass:rgba(255,255,255,0.08);
+--glass-border:rgba(255,255,255,0.15);
+
+--shadow:
+0 10px 40px rgba(0,0,0,.45);
+
+--transition:.4s ease;
+
+}
+
+/* ===================================================
+RESET
+=================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+html,
+body{
+overflow-x:hidden;
+width:100%;
+max-width:100%;
+}
+
+body{
+
+background:
+linear-gradient(
+180deg,
+#050505,
+#0b0b0b,
+#050505
+);
+
+font-family:'Poppins',sans-serif;
+color:white;
+overflow-x:hidden;
+
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+ul{
+list-style:none;
+}
+
+section{
+padding:120px 8%;
+position:relative;
+}
+
+/* ===================================================
+CUSTOM SCROLLBAR
+=================================================== */
+
+::-webkit-scrollbar{
+width:10px;
+}
+
+::-webkit-scrollbar-track{
+background:#080808;
+}
+
+::-webkit-scrollbar-thumb{
+
+background:
+linear-gradient(
+180deg,
+var(--primary),
+#8d6c1d
+);
+
+border-radius:20px;
+}
+
+/* ===================================================
+LOADER
+=================================================== */
+
+#loader{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#000;
+z-index:99999;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.loader-ring{
+
+width:70px;
+height:70px;
+
+border:4px solid rgba(255,255,255,.15);
+border-top:4px solid var(--primary);
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ===================================================
+CURSOR
+=================================================== */
+
+.cursor{
+
+width:18px;
+height:18px;
+
+position:fixed;
+
+border-radius:50%;
+
+background:var(--primary);
+
+pointer-events:none;
+
+z-index:99999;
+
+mix-blend-mode:screen;
+
+transform:translate(-50%,-50%);
+
+}
+
+/* ===================================================
+NAVBAR
+=================================================== */
+
+#navbar{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+
+padding:22px 8%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+z-index:9999;
+
+backdrop-filter:blur(16px);
+
+background:
+rgba(0,0,0,.35);
+
+border-bottom:
+1px solid rgba(255,255,255,.08);
+
+transition:.4s;
+
+}
+
+.logo{
+
+display:flex;
+flex-direction:column;
+
+line-height:1;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+.logo span:first-child{
+
+font-size:2rem;
+font-weight:700;
+letter-spacing:3px;
+
+}
+
+.logo span:last-child{
+
+font-size:1rem;
+color:var(--primary);
+letter-spacing:6px;
+
+}
+
+.nav-links{
+
+display:flex;
+gap:35px;
+
+}
+
+.nav-links a{
+
+position:relative;
+
+font-size:.95rem;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+color:var(--primary);
+
+}
+
+.nav-links a::after{
+
+content:'';
+
+position:absolute;
+
+left:0;
+bottom:-8px;
+
+width:0%;
+height:2px;
+
+background:var(--primary);
+
+transition:.4s;
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+.menu-btn{
+
+display:none;
+
+font-size:1.8rem;
+
+cursor:pointer;
+
+}
+
+/* ===================================================
+HOME SECTION
+=================================================== */
+
+#home{
+
+min-height:100vh;   /* changed */
+height:auto;        /* added */
+
+display:flex;
+align-items:center;
+
+padding-top:120px;  /* changed */
+
+overflow:hidden;
+
+position:relative;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.75),
+rgba(0,0,0,.75)
+),
+
+url("images/hero-bg.jpg");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.hero-left h1{
+
+font-size:clamp(2.5rem,8vw,6rem);
+line-height:1.05;
+
+}
+
+.hero-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+radial-gradient(
+circle at center,
+rgba(212,175,55,.12),
+transparent 60%
+);
+
+}
+
+.hero-content{
+
+position:relative;
+
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+gap:80px;
+
+z-index:10;
+
+}
+
+.hero-left{
+
+flex:1;
+
+}
+
+.welcome{
+
+letter-spacing:5px;
+color:var(--primary);
+
+margin-bottom:20px;
+
+font-size:.9rem;
+
+}
+
+
+
+.book-card{
+width:100%;
+overflow:hidden;
+}
+
+.hero-left h1 span{
+
+display:block;
+
+color:var(--primary);
+
+}
+
+.hero-left h3{
+
+font-weight:400;
+
+font-size:1.4rem;
+
+margin-bottom:25px;
+
+color:#d8d8d8;
+
+}
+
+.hero-description{
+
+max-width:650px;
+
+font-size:1.05rem;
+
+line-height:1.9;
+
+color:#bdbdbd;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.btn-primary{
+
+padding:15px 35px;
+
+border-radius:50px;
+
+background:
+linear-gradient(
+135deg,
+var(--primary),
+#7f6218
+);
+
+color:black;
+
+font-weight:700;
+
+transition:.4s;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+0 15px 40px
+rgba(212,175,55,.35);
+
+}
+
+.btn-secondary{
+
+padding:15px 35px;
+
+border-radius:50px;
+
+border:1px solid
+rgba(255,255,255,.15);
+
+background:var(--glass);
+
+backdrop-filter:blur(20px);
+
+transition:.4s;
+
+}
+
+.btn-secondary:hover{
+
+border-color:var(--primary);
+
+transform:translateY(-5px);
+
+}
+
+/* ===================================================
+AUTHOR IMAGE
+=================================================== */
+
+.author-frame{
+
+width:min(420px,90vw);
+height:auto;
+aspect-ratio:4/5;
+
+border-radius:30px;
+
+overflow:hidden;
+
+position:relative;
+
+background:var(--glass);
+
+border:1px solid var(--glass-border);
+
+backdrop-filter:blur(20px);
+
+box-shadow:var(--shadow);
+
+animation:floatImage 5s ease-in-out infinite;
+
+}
+.author-frame img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+.author-frame::before{
+
+content:'';
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+180deg,
+transparent,
+rgba(0,0,0,.35)
+);
+
+}
+
+@keyframes floatImage{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+/* ===================================================
+SECTION TITLES
+=================================================== */
+
+.section-heading{
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.section-heading span{
+
+color:var(--primary);
+
+letter-spacing:5px;
+
+font-size:.85rem;
+
+}
+
+.section-heading h2{
+
+font-size:3.2rem;
+
+font-family:'Cormorant Garamond',serif;
+
+margin-top:15px;
+
+}
+
+/* ===================================================
+ABOUT SECTION
+=================================================== */
+
+.about-container{
+
+display:grid;
+
+grid-template-columns:
+1fr 1.2fr;
+
+gap:80px;
+
+align-items:center;
+
+}
+
+.about-image{
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+}
+
+.about-image img{
+
+height:100%;
+width:100%;
+
+object-fit:cover;
+
+}
+
+.about-content h3{
+
+font-size:3rem;
+
+font-family:'Cormorant Garamond',serif;
+
+margin-bottom:25px;
+
+}
+
+.about-content p{
+
+line-height:2;
+
+color:#c9c9c9;
+
+margin-bottom:18px;
+
+}
+
+/* ===================================================
+EXPERTISE
+=================================================== */
+
+.expertise-grid{
+
+margin-top:40px;
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:20px;
+
+}
+
+.expert-card{
+
+padding:30px;
+
+text-align:center;
+
+border-radius:20px;
+
+background:var(--glass);
+
+backdrop-filter:blur(18px);
+
+border:1px solid
+var(--glass-border);
+
+transition:.4s;
+
+}
+
+.expert-card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+}
+
+.expert-card i{
+
+font-size:2rem;
+
+margin-bottom:15px;
+
+color:var(--primary);
+
+}
+
+.expert-card h4{
+
+font-size:1rem;
+
+}
+
+/* ===================================================
+ACHIEVEMENTS
+=================================================== */
+
+.achievement-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.achievement-card{
+
+padding:45px 30px;
+
+border-radius:25px;
+
+text-align:center;
+
+background:var(--glass);
+
+backdrop-filter:blur(25px);
+
+border:1px solid
+var(--glass-border);
+
+transition:.4s;
+
+}
+
+.achievement-card:hover{
+
+transform:
+translateY(-10px);
+
+border-color:
+var(--primary);
+
+}
+
+.achievement-card .icon{
+
+width:80px;
+height:80px;
+
+margin:auto;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:
+rgba(212,175,55,.15);
+
+margin-bottom:25px;
+
+}
+
+.achievement-card i{
+
+font-size:2rem;
+
+color:var(--primary);
+
+}
+
+.achievement-card h3{
+
+font-size:2rem;
+
+margin-bottom:12px;
+
+}
+
+.achievement-card p{
+
+color:#c9c9c9;
+
+line-height:1.8;
+
+}
+
+/* ===================================================
+BOOKS SECTION
+=================================================== */
+
+.books-container{
+
+display:flex;
+flex-direction:column;
+gap:120px;
+
+}
+
+.book-card{
+
+display:grid;
+grid-template-columns:450px 1fr;
+gap:80px;
+align-items:center;
+
+}
+
+.book-card.reverse{
+
+grid-template-columns:1fr 450px;
+
+}
+
+.book-card.reverse .book-3d{
+
+order:2;
+
+}
+
+.book-card.reverse .book-info{
+
+order:1;
+
+}
+
+.book-3d{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+perspective:1500px;
+
+}
+
+.book-3d img{
+
+width:320px;
+
+filter:
+drop-shadow(0 30px 50px rgba(0,0,0,.6));
+
+transform-style:preserve-3d;
+
+animation:
+bookFloat 5s ease-in-out infinite;
+
+transition:.5s;
+
+}
+
+.book-3d img:hover{
+
+transform:
+rotateY(-18deg)
+rotateX(8deg)
+translateY(-10px)
+scale(1.04);
+
+}
+
+@keyframes bookFloat{
+
+0%,100%{
+
+transform:
+translateY(0px);
+
+}
+
+50%{
+
+transform:
+translateY(-18px);
+
+}
+
+}
+
+.book-info h3{
+
+font-size:3rem;
+
+font-family:'Cormorant Garamond',serif;
+
+margin-bottom:10px;
+
+}
+
+.book-info h4{
+
+font-size:1.1rem;
+
+letter-spacing:3px;
+
+color:var(--primary);
+
+margin-bottom:25px;
+
+}
+
+.book-info p{
+
+font-size:1rem;
+
+line-height:2;
+
+color:#c8c8c8;
+
+margin-bottom:35px;
+
+max-width:700px;
+
+}
+
+.book-links{
+
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+
+}
+
+.book-links a{
+
+padding:13px 24px;
+
+border-radius:40px;
+
+background:var(--glass);
+
+border:1px solid
+var(--glass-border);
+
+backdrop-filter:blur(15px);
+
+transition:.4s;
+
+}
+
+.book-links a:hover{
+
+background:
+linear-gradient(
+135deg,
+var(--primary),
+#8f6f1f
+);
+
+color:black;
+
+font-weight:600;
+
+transform:translateY(-4px);
+
+}
+
+/* ===================================================
+TIMELINE
+=================================================== */
+
+.timeline-container{
+
+position:relative;
+
+max-width:1100px;
+
+margin:auto;
+
+padding-top:50px;
+
+}
+
+.timeline-container::before{
+
+content:'';
+
+position:absolute;
+
+left:50%;
+
+top:0;
+
+width:3px;
+
+height:100%;
+
+background:
+linear-gradient(
+180deg,
+transparent,
+var(--primary),
+transparent
+);
+
+transform:translateX(-50%);
+
+}
+
+.timeline-item{
+
+position:relative;
+
+width:50%;
+
+padding:30px 50px;
+
+}
+
+.timeline-item:nth-child(odd){
+
+left:0;
+
+text-align:right;
+
+}
+
+.timeline-item:nth-child(even){
+
+left:50%;
+
+}
+
+.timeline-dot{
+
+position:absolute;
+
+top:35px;
+
+right:-12px;
+
+width:24px;
+height:24px;
+
+border-radius:50%;
+
+background:var(--primary);
+
+box-shadow:
+0 0 25px
+rgba(212,175,55,.7);
+
+}
+
+.timeline-item:nth-child(even) .timeline-dot{
+
+left:-12px;
+
+}
+
+.timeline-content{
+
+padding:30px;
+
+background:var(--glass);
+
+backdrop-filter:blur(20px);
+
+border-radius:20px;
+
+border:1px solid
+var(--glass-border);
+
+transition:.4s;
+
+}
+
+.timeline-content:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--primary);
+
+}
+
+.timeline-content h3{
+
+margin-bottom:15px;
+
+font-size:1.3rem;
+
+}
+
+.timeline-content p{
+
+color:#cfcfcf;
+
+line-height:1.9;
+
+}
+
+/* ===================================================
+SKILLS
+=================================================== */
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(2,1fr);
+
+gap:30px;
+
+}
+
+.skill-box{
+
+padding:35px;
+
+background:var(--glass);
+
+border-radius:25px;
+
+border:1px solid
+var(--glass-border);
+
+transition:.4s;
+
+}
+
+.skill-box:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--primary);
+
+}
+
+.skill-box i{
+
+font-size:2rem;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.skill-box h3{
+
+margin-bottom:20px;
+
+font-size:1.2rem;
+
+}
+
+.skill-bar{
+
+height:12px;
+
+border-radius:50px;
+
+background:
+rgba(255,255,255,.08);
+
+overflow:hidden;
+
+}
+
+.skill-progress{
+
+height:100%;
+
+border-radius:50px;
+
+background:
+linear-gradient(
+90deg,
+var(--primary),
+#f4dd87
+);
+
+}
+
+/* ===================================================
+STATISTICS
+=================================================== */
+
+#stats{
+
+padding:100px 8%;
+
+}
+
+.stats-container{
+
+display:grid;
+
+grid-template-columns:
+repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.stat-box{
+
+padding:50px 25px;
+
+text-align:center;
+
+background:var(--glass);
+
+backdrop-filter:blur(20px);
+
+border-radius:25px;
+
+border:1px solid
+var(--glass-border);
+
+transition:.4s;
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--primary);
+
+}
+
+.stat-box h2{
+
+font-size:4rem;
+
+font-family:'Cormorant Garamond',serif;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+}
+
+.stat-box p{
+
+letter-spacing:2px;
+
+color:#d0d0d0;
+
+}
+
+/* ===================================================
+CONTACT SECTION
+=================================================== */
+
+#contact{
+
+padding-bottom:150px;
+
+}
+
+.contact-container{
+
+display:grid;
+
+grid-template-columns:
+1fr 1fr;
+
+gap:50px;
+
+}
+
+.contact-card{
+
+padding:40px;
+
+background:var(--glass);
+
+border-radius:25px;
+
+border:1px solid
+var(--glass-border);
+
+backdrop-filter:blur(20px);
+
+}
+
+.contact-card h3{
+
+font-size:2rem;
+
+margin-bottom:20px;
+
+font-family:'Cormorant Garamond',serif;
+
+}
+
+.contact-card p{
+
+line-height:2;
+
+color:#d0d0d0;
+
+margin-bottom:15px;
+
+}
+
+.contact-links{
+
+display:flex;
+gap:20px;
+margin-top:25px;
+
+}
+
+.contact-links a{
+
+width:60px;
+height:60px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:50%;
+
+background:var(--glass);
+
+border:1px solid
+var(--glass-border);
+
+font-size:1.3rem;
+
+transition:.4s;
+
+}
+
+.contact-links a:hover{
+
+background:var(--primary);
+
+color:black;
+
+transform:translateY(-5px);
+
+}
+
+/* ===================================================
+FOOTER
+=================================================== */
+
+footer{
+
+padding:50px 8%;
+
+border-top:
+1px solid rgba(255,255,255,.08);
+
+text-align:center;
+
+}
+
+footer h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:2rem;
+
+margin-bottom:15px;
+
+}
+
+footer p{
+
+color:#a8a8a8;
+
+line-height:1.8;
+
+}
+
+/* ===================================================
+RESPONSIVE
+=================================================== */
+
+@media(max-width:1200px){
+
+.hero-left h1{
+
+font-size:5rem;
+
+}
+
+.book-card,
+.book-card.reverse{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.book-card.reverse .book-info,
+.book-card.reverse .book-3d{
+
+order:unset;
+
+}
+
+.about-container{
+
+grid-template-columns:1fr;
+
+}
+
+.achievement-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+.stats-container{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:900px){
+
+.hero-content{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.author-frame{
+
+width:350px;
+height:450px;
+
+}
+
+.timeline-container::before{
+
+left:25px;
+
+}
+
+.timeline-item{
+
+width:100%;
+left:0 !important;
+
+padding-left:70px;
+padding-right:20px;
+
+text-align:left !important;
+
+}
+
+.timeline-dot{
+
+left:13px !important;
+right:auto !important;
+
+}
+
+.skills-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+    .hero-content{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.hero-left{
+width:100%;
+}
+
+.hero-right{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
+.nav-links{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.hero-left h1{
+
+font-size:4rem;
+
+}
+
+.section-heading h2{
+
+font-size:2.5rem;
+
+}
+
+.expertise-grid{
+
+grid-template-columns:
+repeat(2,1fr);
+
+}
+
+.achievement-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.stats-container{
+
+grid-template-columns:1fr;
+
+}
+
+.book-3d img{
+
+width:250px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.hero-left h1{
+
+font-size:3rem;
+
+}
+
+.author-frame{
+
+width:280px;
+height:360px;
+
+}
+
+.expertise-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.book-info h3{
+
+font-size:2.2rem;
+
+}
+
+.stat-box h2{
+
+font-size:3rem;
+
+}
+
+}
+
+.nav-links.active{
+display:flex;
+}
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#0d0d0d;
+padding:20px;
+}
+
+}
+
+.hidden{
+opacity:0;
+transform:translateY(50px);
+transition:.8s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.spark{
+position:absolute;
+width:4px;
+height:4px;
+background:#d4af37;
+border-radius:50%;
+pointer-events:none;
+animation:sparkFloat 5s linear forwards;
+}
+
+@keyframes sparkFloat{
+0%{
+opacity:1;
+transform:translateY(0);
+}
+100%{
+opacity:0;
+transform:translateY(-100px);
+}
+}
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+flex-direction:column;
+
+position:absolute;
+
+top:80px;
+left:0;
+
+width:100%;
+
+background:#0d0d0d;
+
+padding:25px;
+
+gap:20px;
+
+text-align:center;
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+}
+
+.hero-right{
+
+display:flex;
+justify-content:center;
+
+}
+.timeline-content{
+width:100%;
+}
+
+@media(max-width:768px){
+
+section{
+
+padding:90px 6%;
+
+}
+.book-card,
+.book-card.reverse{
+
+grid-template-columns:1fr;
+gap:40px;
+
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="loader">
+    <div class="loader-ring"></div>
+</div>
+
+<div class="cursor"></div>
+
+<nav id="navbar">
+
+    <div class="logo">
+
+        <span>AYUSH</span>
+        <span style="color: #BF953F;">BHARTI</span>
+        <h6>published author</h6>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#timeline">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+</nav>
+
+<!-- HERO -->
+
+<section id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div id="particles-js"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-left">
+
+            <p class="welcome">
+                OFFICIAL PORTFOLIO
+            </p>
+<br><br>
+            <h1>
+
+                Ayush
+                <span>Bharti</span>
+                
+            </h1>
+
+            <h3 style="font-size: 20px">
+
+                Published Author • Poet • Artist
+
+            </h3>
+
+            <p class="hero-description">
+
+                Crafting emotions through words,
+                literature and 
+                artistic expression.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#books" class="btn-primary">
+
+                    Explore Works
+
+                </a>
+
+                <a href="#contact" class="btn-secondary">
+
+                    Contact Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="author-frame">
+
+                <!-- PLACEHOLDER -->
+
+                <img src="https://img.sanishtech.com/u/7a40095b73a33699feb48d395cefbedf.png"
+                     alt="Ayush Bharti">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="section-heading">
+
+        <span>WHO I AM</span>
+
+        <h2>
+            About Ayush Bharti
+        </h2>
+
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-image">
+
+            <img src="https://img.sanishtech.com/u/7a40095b73a33699feb48d395cefbedf.png"
+                 alt="Ayush Bharti">
+
+        </div>
+
+        <div class="about-content">
+
+            <h3>
+
+                Author.
+                Creator.
+                Dreamer.
+
+            </h3>
+
+            <p>
+
+                Ayush Bharti is a young passionate author,
+                poet and creative thinker whose literary
+                journey extends far beyond conventional
+                writing.
+
+            </p>
+
+            <p>
+
+                With contributions in more than
+                150+ anthology books across diverse
+                literary platforms, by the age of 17, Ayush has established
+                himself as a recognized literary voice
+                among emerging authors.
+
+            </p>
+
+            <p>
+
+                His works blend emotion,
+                introspection and storytelling,
+                offering readers meaningful experiences
+                that remain long after the final page.
+
+            </p>
+
+            <div class="expertise-grid">
+
+                <div class="expert-card">
+
+                    <i class="fas fa-feather"></i>
+
+                    <h4>Literature</h4>
+
+                </div>
+
+                <div class="expert-card">
+
+                    <i class="fas fa-paint-brush"></i>
+
+                    <h4>Art</h4>
+
+                </div>
+
+                <div class="expert-card">
+
+                    <i class="fas fa-music"></i>
+
+                    <h4>Music</h4>
+
+                </div>
+
+                <div class="expert-card">
+
+                    <i class="fas fa-code"></i>
+
+                    <h4>Programming</h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements">
+
+    <div class="section-heading">
+
+        <span>RECOGNITIONS</span>
+
+        <h2>
+            Milestones & Achievements
+        </h2>
+
+    </div>
+
+    <div class="achievement-grid">
+
+        <div class="achievement-card">
+
+            <div class="icon">
+
+                <i class="fas fa-book-open"></i>
+
+            </div>
+
+            <h3>150+</h3>
+
+            <p>
+
+                Anthology Contributions
+
+            </p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <div class="icon">
+
+                <i class="fas fa-award"></i>
+
+            </div>
+
+            <h3>
+
+                Internationally
+
+            </h3>
+
+            <p>
+
+                Recognized Author
+
+            </p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <div class="icon">
+
+                <i class="fas fa-medal"></i>
+
+            </div>
+
+            <h3>
+
+                World Records
+
+            </h3>
+
+            <p>
+
+                Literary Contributions
+
+            </p>
+
+        </div>
+
+        <div class="achievement-card">
+
+            <div class="icon">
+
+                <i class="fas fa-star"></i>
+
+            </div>
+
+            <h3>
+
+                Multi-Talented
+
+            </h3>
+
+            <p>
+
+                Literature • Art • Music • Technology
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ========================================= -->
+<!-- BOOKS SHOWCASE -->
+<!-- ========================================= -->
+
+<section id="books">
+
+    <div class="section-heading">
+
+        <span>FEATURED WORKS</span>
+
+        <h2>Published Books</h2>
+
+    </div>
+
+    <div class="books-container">
+
+        <!-- BOOK 1 -->
+
+        <div class="book-card">
+
+            <div class="book-3d">
+
+                <img src="https://img.sanishtech.com/u/d01ae0783707c127cabd52dec273bc1d.png"
+                     alt="Where The Heart Paused">
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>
+                    Where the Heart Paused
+                </h3>
+
+                <h4>
+                    The Lane of Longing
+                </h4>
+
+                <p>
+
+                    A deeply emotional prose collection
+                    exploring love, longing, memories,
+                    silence, healing and the unspoken
+                    emotions that linger within the heart.
+
+                </p>
+
+                <div class="book-links">
+
+                    <a href="https://blueroseone.com/store/product/where-the-heart-paused-the-lane-of-longing"
+                       target="_blank">
+
+                       BlueRose
+
+                    </a>
+
+                    <a href="https://www.amazon.in/dp/9378259774"
+                       target="_blank">
+
+                       Amazon
+
+                    </a>
+
+                    <a href="https://www.flipkart.com/product/p/itme?pid=9789378259777"
+                       target="_blank">
+
+                       Flipkart
+
+                    </a>
+
+                    <a href="https://www.goodreads.com/book/show/253709136-where-the-heart-paused"
+                       target="_blank">
+
+                       Goodreads
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOOK 2 -->
+
+        <div class="book-card reverse">
+
+            <div class="book-3d">
+
+                <img src="https://img.sanishtech.com/u/b24b146743fa159a94155fa3cedca446.png"
+                     alt="The Unseen Truth">
+
+            </div>
+
+            <div class="book-info">
+
+                <h3>
+
+                    The Unseen Truth
+
+                </h3>
+
+                <h4>
+
+                    Anant Sachnama
+
+                </h4>
+
+                <p>
+
+                    A thought-provoking literary work
+                    exploring truths hidden beneath
+                    perception, inviting readers into
+                    a deeper journey of reflection,
+                    awareness and understanding.
+
+                </p>
+
+                <div class="book-links">
+
+                    <a href="https://amzn.in/d/08g9qfeT"
+                       target="_blank">
+
+                       Amazon
+
+                    </a>
+
+                    <a href="https://dl.flipkart.com/dl/unseen-truth-sachnama-anant-sachnama/p/itm3bc664ae4bd47"
+                       target="_blank">
+
+                       Flipkart
+
+                    </a>
+
+                    <a href="https://www.ziffybees.com/product/the-unseen-truth-sachnama-anant-sachnama/"
+                       target="_blank">
+
+                       ZiffyBees
+
+                    </a>
+
+                    <a href="https://www.goodreads.com/book/show/252940194-the-unseen-truth"
+                       target="_blank">
+
+                       Goodreads
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- JOURNEY -->
+<!-- ========================================= -->
+
+<section id="timeline">
+
+    <div class="section-heading">
+
+        <span>JOURNEY</span>
+
+        <h2>Literary Timeline</h2>
+
+    </div>
+
+    <div class="timeline-container">
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>Beginning of Writing Journey</h3>
+
+                <p>
+
+                    Started exploring poetry,
+                    storytelling and emotional writing,
+                    gradually developing a unique voice.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>150+ Anthology Contributions</h3>
+
+                <p>
+
+                    Participated in numerous national
+                    and international anthology projects.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>International Recognition</h3>
+
+                <p>
+
+                    Earned recognition through literary
+                    contributions and collaborative projects.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>The Unseen Truth</h3>
+
+                <p>
+
+                    Published a thought-provoking book
+                    exploring deeper dimensions of truth.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>Where the Heart Paused</h3>
+
+                <p>
+
+                    Published an emotional prose collection
+                    resonating with readers through themes
+                    of love, longing and healing.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- SKILLS -->
+<!-- ========================================= -->
+
+<section id="skills">
+
+    <div class="section-heading">
+
+        <span>EXPERTISE</span>
+
+        <h2>Creative Excellence</h2>
+
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-box">
+
+            <i class="fas fa-feather-alt"></i>
+
+            <h3>Creative Writing</h3>
+
+            <div class="skill-bar">
+
+                <div class="skill-progress"
+                     style="width:95%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="skill-box">
+
+            <i class="fas fa-book"></i>
+
+            <h3>Literature</h3>
+
+            <div class="skill-bar">
+
+                <div class="skill-progress"
+                     style="width:92%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="skill-box">
+
+            <i class="fas fa-palette"></i>
+
+            <h3>Art & Creativity</h3>
+
+            <div class="skill-bar">
+
+                <div class="skill-progress"
+                     style="width:88%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="skill-box">
+
+            <i class="fas fa-music"></i>
+
+            <h3>Music</h3>
+
+            <div class="skill-bar">
+
+                <div class="skill-progress"
+                     style="width:80%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="skill-box">
+
+            <i class="fas fa-code"></i>
+
+            <h3>Programming</h3>
+
+            <div class="skill-bar">
+
+                <div class="skill-progress"
+                     style="width:85%"></div>
+
+            </div>
+
+        </div>
+
+        <div class="skill-box">
+
+            <i class="fas fa-laptop-code"></i>
+
+            <h3>Web Development</h3>
+
+            <div class="skill-bar">
+
+                <div class="skill-progress"
+                     style="width:82%"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- LIVE STATS -->
+<!-- ========================================= -->
+
+<section id="stats">
+
+    <div class="stats-container">
+
+        <div class="stat-box">
+
+            <h2 class="counter"
+                data-target="152">
+
+                0
+            </h2>
+
+            <p>Anthologies</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2 class="counter"
+                data-target="2">
+
+                0
+
+            </h2>
+
+            <p>Published Books</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2 class="counter"
+                data-target="4">
+
+                0
+
+            </h2>
+
+            <p>Creative Fields</p>
+
+        </div>
+
+        <div class="stat-box">
+
+            <h2 class="counter"
+                data-target="100">
+
+                0
+
+            </h2>
+
+            <p>Future Milestones</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<center>
+<section id="contact">
+    <div class="contant" style="align-content: center;">
+        <h1 style="color: #8d6c1d;"><u>Contact</u></h1>
+            <h3> Email : ayushbharti.official123@gmail.com </h3>
+            <h3>Phone : +91 87097 19196 | +91 89874 14982</h3>
+    </div>
+</center>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+    /* ==========================================
+   AYUSH BHARTI OFFICIAL PORTFOLIO
+   PREMIUM JAVASCRIPT
+========================================== */
+
+/* ==========================
+   LOADER
+========================== */
+
+window.addEventListener("load", () => {
+
+    const loader = document.getElementById("loader");
+
+    setTimeout(() => {
+
+        loader.style.opacity = "0";
+
+        loader.style.visibility = "hidden";
+
+    }, 1200);
+
+});
+
+/* ==========================
+   CUSTOM CURSOR
+========================== */
+
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+
+});
+
+/* ==========================
+   NAVBAR SCROLL EFFECT
+========================== */
+
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 80){
+
+        navbar.style.background =
+        "rgba(0,0,0,0.85)";
+
+        navbar.style.padding =
+        "16px 8%";
+
+        navbar.style.boxShadow =
+        "0 5px 30px rgba(0,0,0,.35)";
+
+    }
+
+    else{
+
+        navbar.style.background =
+        "rgba(0,0,0,.35)";
+
+        navbar.style.padding =
+        "22px 8%";
+
+        navbar.style.boxShadow =
+        "none";
+
+    }
+
+});
+
+/* ==========================
+   SMOOTH LINKS
+========================== */
+
+document
+.querySelectorAll('a[href^="#"]')
+.forEach(anchor => {
+
+    anchor.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const target =
+        document.querySelector(
+            this.getAttribute("href")
+        );
+
+        if(target){
+
+            target.scrollIntoView({
+
+                behavior:"smooth"
+
+            });
+
+        }
+
+    });
+
+});
+
+/* ==========================
+   COUNTERS
+========================== */
+
+const counters =
+document.querySelectorAll(".counter");
+
+const counterObserver =
+new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            const counter =
+            entry.target;
+
+            const target =
+            +counter.dataset.target;
+
+            let current = 0;
+
+            const increment =
+            target / 100;
+
+            const updateCounter = () => {
+
+                if(current < target){
+
+                    current += increment;
+
+                    counter.innerText =
+                    Math.ceil(current);
+
+                    requestAnimationFrame(
+                        updateCounter
+                    );
+
+                }
+
+                else{
+
+                    counter.innerText =
+                    target;
+
+                }
+
+            }
+
+            updateCounter();
+
+            counterObserver.unobserve(counter);
+
+        }
+
+    });
+
+},{threshold:.5});
+
+counters.forEach(counter=>{
+
+    counterObserver.observe(counter);
+
+});
+
+/* ==========================
+   SCROLL REVEAL
+========================== */
+
+const revealElements =
+document.querySelectorAll(
+
+'.section-heading,\
+.about-container,\
+.achievement-card,\
+.book-card,\
+.timeline-item,\
+.skill-box,\
+.stat-box'
+
+);
+
+const revealObserver =
+new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add(
+                "show"
+            );
+
+        }
+
+    });
+
+},{threshold:.15});
+
+revealElements.forEach(el=>{
+
+    el.classList.add("hidden");
+
+    revealObserver.observe(el);
+
+});
+
+/* ==========================
+   MOBILE MENU
+========================== */
+
+const menuBtn =
+document.querySelector(".menu-btn");
+
+const navLinks =
+document.querySelector(".nav-links");
+
+if(menuBtn){
+
+menuBtn.addEventListener("click",()=>{
+
+    navLinks.classList.toggle("active");
+
+});
+
+}
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        navLinks.classList.remove(
+            "active"
+        );
+
+    });
+
+});
+
+/* ==========================
+   PARTICLES JS
+========================== */
+
+if(document.getElementById("particles-js")){
+
+particlesJS("particles-js",{
+
+    particles:{
+
+        number:{
+            value:60,
+            density:{
+                enable:true,
+                value_area:800
+            }
+        },
+
+        color:{
+            value:"#d4af37"
+        },
+
+        shape:{
+            type:"circle"
+        },
+
+        opacity:{
+            value:0.4
+        },
+
+        size:{
+            value:3,
+            random:true
+        },
+
+        line_linked:{
+            enable:true,
+            distance:150,
+            color:"#d4af37",
+            opacity:0.15,
+            width:1
+        },
+
+        move:{
+            enable:true,
+            speed:1.5
+        }
+
+    },
+
+    interactivity:{
+
+        detect_on:"canvas",
+
+        events:{
+
+            onhover:{
+                enable:true,
+                mode:"grab"
+            },
+
+            onclick:{
+                enable:true,
+                mode:"push"
+            }
+
+        },
+
+        modes:{
+
+            grab:{
+                distance:160,
+                line_linked:{
+                    opacity:0.4
+                }
+            },
+
+            push:{
+                particles_nb:4
+            }
+
+        }
+
+    },
+
+    retina_detect:true
+
+});
+
+}
+
+/* ==========================
+   PARALLAX HERO
+========================== */
+
+window.addEventListener("mousemove",(e)=>{
+
+    const hero =
+    document.querySelector("#home");
+
+    if(!hero) return;
+
+    const x =
+    (window.innerWidth/2 - e.pageX)/40;
+
+    const y =
+    (window.innerHeight/2 - e.pageY)/40;
+
+    hero.style.backgroundPosition =
+    `${50+x}% ${50+y}%`;
+
+});
+
+/* ==========================
+   FLOATING BOOKS
+========================== */
+
+const books =
+document.querySelectorAll(".book-3d img");
+
+books.forEach(book=>{
+
+    book.addEventListener("mousemove",(e)=>{
+
+        const rect =
+        book.getBoundingClientRect();
+
+        const x =
+        e.clientX - rect.left;
+
+        const y =
+        e.clientY - rect.top;
+
+        const rotateY =
+        ((x / rect.width)-0.5)*20;
+
+        const rotateX =
+        ((y / rect.height)-0.5)*-20;
+
+        book.style.transform =
+
+        `
+        rotateY(${rotateY}deg)
+        rotateX(${rotateX}deg)
+        scale(1.05)
+        `;
+
+    });
+
+    book.addEventListener("mouseleave",()=>{
+
+        book.style.transform =
+        "rotateY(0deg) rotateX(0deg)";
+
+    });
+
+});
+
+/* ==========================
+   TYPING EFFECT
+========================== */
+
+const title =
+document.querySelector(".hero-left h3");
+
+if(title){
+
+const text =
+title.innerText;
+
+title.innerHTML = "";
+
+let i = 0;
+
+function typeWriter(){
+
+    if(i < text.length){
+
+        title.innerHTML += text.charAt(i);
+
+        i++;
+
+        setTimeout(typeWriter,60);
+
+    }
+
+}
+
+setTimeout(typeWriter,1200);
+
+}
+
+/* ==========================
+   ACTIVE NAVIGATION
+========================== */
+
+const sections =
+document.querySelectorAll("section");
+
+window.addEventListener("scroll",()=>{
+
+    let current = "";
+
+    sections.forEach(section=>{
+
+        const sectionTop =
+        section.offsetTop - 200;
+
+        if(window.scrollY >= sectionTop){
+
+            current = section.getAttribute("id");
+
+        }
+
+    });
+
+    document
+    .querySelectorAll(".nav-links a")
+    .forEach(link=>{
+
+        link.classList.remove("active");
+
+        if(
+            link.getAttribute("href")
+            === "#" + current
+        ){
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+/* ==========================
+   BOOK GLOW EFFECT
+========================== */
+
+setInterval(()=>{
+
+    books.forEach(book=>{
+
+        book.style.filter =
+
+        `
+        drop-shadow(
+        0 20px 40px
+        rgba(212,175,55,.25)
+        )
+        `;
+
+    });
+
+},2000);
+
+/* ==========================
+   RANDOM GOLD SPARKS
+========================== */
+
+function createSpark(){
+
+    const spark =
+    document.createElement("span");
+
+    spark.classList.add("spark");
+
+    document.body.appendChild(spark);
+
+    spark.style.left =
+    Math.random()*window.innerWidth+"px";
+
+    spark.style.top =
+    window.scrollY +
+    Math.random()*window.innerHeight
+    +"px";
+
+    spark.style.animationDuration =
+    (2+Math.random()*3)+"s";
+
+    setTimeout(()=>{
+
+        spark.remove();
+
+    },5000);
+
+}
+
+setInterval(createSpark,700);
+
+/* ==========================
+   CONSOLE SIGNATURE
+========================== */
+
+console.log(
+
+"%cAyush Bharti Official Portfolio",
+
+"color:#d4af37;font-size:20px;font-weight:bold"
+
+);
+
+console.log(
+
+"%cAuthor | Poet | Artist | Programmer",
+
+"color:white;font-size:14px"
+
+);
+</script>
+
+</body>
+</html>
